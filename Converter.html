@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<script>
+
+function calculate(){
+    var FTemp = document.getElementById("f-temperature").value;
+ 
+console.log(FTemp);
+
+var n=100;
+   var TTepm = (5/9)*[(FTemp -32)];
+console.log(TTepm);
+   document.getElementById("c-temp").innerHTML=TTepm;
+}
+</script>
+
+
+<body>
+
+
+
+
+<p id="f-temp">
+<input id="f-temperature" type="number" placeholder="Temperature in 'F">
+
+</p>
+
+
+    <input id="c-temperature" type="number"  placeholder="Temperature in 'C">
+  <p id="c-temp">
+</p>
+
+<p id="k-temp">
+    <input id="k-temperature" type="number" placeholder="Temperature in 'K">
+</p>
+
+<BUtton onclick="calculate()" id="calculate">
+
+Calculate
+</BUtton>
+    
+</body>
+</html>

@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator | Math Lab</title>
+
+    <script src="gpacalculation.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nova Square"
+  >
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <link rel="stylesheet"  href="Style/main.css">
+   
+</head>
+<body>
+
+
+<!-- Header Navigation Bar Start -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="./logo.png"
+          alt=""
+          width="130px"
+          class="d-inline-block align-text-top"
+        >
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+<div class="justify-content-end">
+
+      <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end"> -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="menu-icons" style="padding-bottom: 7px; text-align: center">
+                <i class="fa-2x fa-solid fa-calculator"></i>
+              </div>
+              Calculators
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="GPACalculator.html">GPA Calculator</a></li>
+              
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">All Calcultors</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="menu-icons" style="padding-bottom: 7px; text-align: center">
+                <i class="fa-2x fa-solid fa-recycle"></i>
+              </div>
+              Converters
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="">Temperature Converter</a></li>
+              <li><a class="dropdown-item" href="">Currency Converter</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">All Converters</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item ">
+            <a
+              class="nav-link "
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="menu-icons" style="padding-bottom: 7px; text-align: center">
+                <i class="fa-2x fa-solid fa-address-card"></i>
+              </div>
+              About Us
+            </a>    
+          </li>
+
+          <li class="nav-item ">
+            <a
+              class="nav-link "
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="menu-icons" style="padding-bottom: 7px; text-align: center">
+                <i class="fa-solid fa-clipboard-question fa-2x"></i>
+              </div>
+              Ask a Question
+            </a>    
+          </li>
+
+
+        </ul>
+      </div>
+        <div class="d-grid gap-2 d-md-flex boxed-content-md-end">
+          
+       
+        </div>
+     
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- Header Navigation Bar End -->
+
+<div id="main-grid" class="row">
+
+
+
+
+  <div  style="background-color: rgb(230, 230, 230);" id="main-div-1" class="col">
+
+     <h1 class="display-6">UOG CGPA Calculator</h1>
+    <img class="grade-image" width="400px" src="/img/21.jpg" alt="">
+
+  <br><br>
+<div style="background-color: rgb(230, 230, 230); padding-left: 10px; text-align: left;">
+   
+  <p class="lead">
+      The mission of <a target="_blank"  href="https://uog.edu.pk"> Univerty of Gujrat</a> is to equip the youth in the areas of economy, social policy and research, so as to enable them to compete at the international level; achieve excellence in research and teaching in all disciplines; and develop a world class centre of excellence in the industrial triangle of Gujranwala.    </p>
+<hr>
+    <p class="lead">
+      Contributed By : <br><a target="_blank" href="mailto:19011598-083@uog.edu.pk"> Muhammad Tabarak | 19011598-083</a>    </p>
+    
+  </div> 
+    </div>
+
+
+  <div class="col">
+
+    <div  id="main-div-2" class="container">
+            <div class="container">
+
+
+              
+<!-- ROW 11.1 Total -->
+
+
+
+
+<div id="total-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          *
+        </p>
+  </div>
+
+<div style="text-align: right !important;" class="col">
+  <p class="lead">
+   Current Cr. Hr. 
+  </p>
+</div>
+
+
+<div class="col">
+
+  <p class="lead">
+    |  &nbsp;&nbsp;Current CGPA :
+</p>
+
+</div>
+
+<div style="text-align: center;" class="col">
+    
+</div>
+<div class="col">
+
+  <input  id="current-cr" class="form-control" type="text" placeholder="Current CH." aria-label="default input example">
+
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="current-cgpa" class="form-control" type="text" placeholder="Current CGPA" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 11.1 Total  Ends -->
+
+
+
+<!-- ROW 01 HEADING -->
+
+<div id="heading-row" class="row">
+
+    <div class="col">
+       
+      <p class="lead">
+            N.
+          </p>
+    </div>
+
+  <div class="col">
+
+    <p class="lead">
+        Grade
+      </p>
+
+  </div>
+  <div class="col">
+
+    <p class="lead">
+        Points
+      </p>
+     
+  </div>
+
+  <div style="text-align: center;" class="col">
+    <strong>*</strong>
+  </div>
+  <div class="col">
+    
+    <p class="lead">
+        Grade
+      </p>
+  
+
+  </div>
+
+  
+  <div style="text-align: center;" class="col">
+    <strong>=</strong>
+</div>
+
+  <div class="col">
+    
+    
+    <p class="lead">
+        Grade Points
+
+      </p>
+   
+
+
+  </div>
+</div>
+
+
+<!-- ROW 01 Heading Ends -->
+
+
+
+
+
+
+
+
+<!-- ROW 02 SUBJECT 01 -->
+
+                
+            <div id="subject1-row" class="row">
+
+                <div class="col">
+                    <p class="lead">
+                        1.
+                      </p>
+                </div>
+
+              <div class="col">
+                <select onchange="
+                  document.getElementById('subject-1-points').value=FindPoint(document.getElementById('subject-1-grade').value); 
+                  document.getElementById('subject-1-gp').value=[document.getElementById('subject-1-cr').value*document.getElementById('subject-1-points').value]"
+                  id="subject-1-grade"  class="form-select" aria-label="Default select example">
+                  
+                  <option selected>Select</option>
+                    <option value="1">A+</option>
+                    <option value="2">A</option>
+                    <option value="3">B+</option>
+                    <option value="4">B</option>
+                    <option value="5">B-</option>
+                    <option value="6">C+</option>
+                    <option value="7">C</option>
+                    <option value="8">D</option>
+                    <option value="9">F</option>
+                  </select>
+              </div>
+
+
+              <div class="col">
+
+              
+                  <input  id="subject-1-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+              </div>
+
+              <div style="text-align: center;" class="col">
+                  <strong>*</strong>
+              </div>
+              <div class="col">
+           
+                <select onchange="
+                  document.getElementById('subject-1-gp').value=[document.getElementById('subject-1-cr').value*document.getElementById('subject-1-points').value]" 
+                  id="subject-1-cr" class="form-select" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                 
+                  </select>
+
+              </div>
+
+              
+              <div style="text-align: center;" class="col">
+                <strong>=</strong>
+            </div>
+
+              <div class="col">
+                
+                
+             
+                  <input  id="subject-1-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+              </div>
+            </div>
+
+            <!-- ROW 02 SUBJECT 01  Ends -->
+
+
+
+
+
+
+            
+
+<!-- ROW 03 SUBJECT 02 -->
+
+
+
+<div id="subject2-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          2.
+        </p>
+  </div>
+
+<div class="col">
+  <select onchange="
+    document.getElementById('subject-2-points').value=FindPoint(document.getElementById('subject-2-grade').value); 
+    document.getElementById('subject-2-gp').value=[document.getElementById('subject-2-cr').value*document.getElementById('subject-2-points').value]"
+    id="subject-2-grade"  class="form-select" aria-label="Default select example">
+    
+    <option selected>Select</option>
+      <option value="1">A+</option>
+      <option value="2">A</option>
+      <option value="3">B+</option>
+      <option value="4">B</option>
+      <option value="5">B-</option>
+      <option value="6">C+</option>
+      <option value="7">C</option>
+      <option value="8">D</option>
+      <option value="9">F</option>
+    </select>
+</div>
+
+
+<div class="col">
+
+
+    <input  id="subject-2-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    <strong>*</strong>
+</div>
+<div class="col">
+
+  <select onchange="
+    document.getElementById('subject-2-gp').value=[document.getElementById('subject-2-cr').value*document.getElementById('subject-2-points').value]" 
+    id="subject-2-cr" class="form-select" aria-label="Default select example">
+      <option selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   
+    </select>
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  <strong>=</strong>
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="subject-2-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 03 SUBJECT 02  Ends -->
+            
+
+
+
+
+
+
+
+<!-- ROW 04 SUBJECT 03 -->
+
+
+
+<div id="subject3-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          3.
+        </p>
+  </div>
+
+<div class="col">
+  <select onchange="
+    document.getElementById('subject-3-points').value=FindPoint(document.getElementById('subject-3-grade').value); 
+    document.getElementById('subject-3-gp').value=[document.getElementById('subject-3-cr').value*document.getElementById('subject-3-points').value]"
+    id="subject-3-grade"  class="form-select" aria-label="Default select example">
+    
+    <option selected>Select</option>
+      <option value="1">A+</option>
+      <option value="2">A</option>
+      <option value="3">B+</option>
+      <option value="4">B</option>
+      <option value="5">B-</option>
+      <option value="6">C+</option>
+      <option value="7">C</option>
+      <option value="8">D</option>
+      <option value="9">F</option>
+    </select>
+</div>
+
+
+<div class="col">
+
+
+    <input  id="subject-3-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    <strong>*</strong>
+</div>
+<div class="col">
+
+  <select onchange="
+    document.getElementById('subject-3-gp').value=[document.getElementById('subject-3-cr').value*document.getElementById('subject-3-points').value]" 
+    id="subject-3-cr" class="form-select" aria-label="Default select example">
+      <option selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   
+    </select>
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  <strong>=</strong>
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="subject-3-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 04 SUBJECT 03  Ends -->
+
+
+
+
+
+
+
+<!-- ROW 05 SUBJECT 04 -->
+
+
+
+<div id="subject4-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          4.
+        </p>
+  </div>
+
+<div class="col">
+  <select onchange="
+    document.getElementById('subject-4-points').value=FindPoint(document.getElementById('subject-4-grade').value); 
+    document.getElementById('subject-4-gp').value=[document.getElementById('subject-4-cr').value*document.getElementById('subject-4-points').value]"
+    id="subject-4-grade"  class="form-select" aria-label="Default select example">
+    
+    <option selected>Select</option>
+      <option value="1">A+</option>
+      <option value="2">A</option>
+      <option value="3">B+</option>
+      <option value="4">B</option>
+      <option value="5">B-</option>
+      <option value="6">C+</option>
+      <option value="7">C</option>
+      <option value="8">D</option>
+      <option value="9">F</option>
+    </select>
+</div>
+
+
+<div class="col">
+
+
+    <input  id="subject-4-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    <strong>*</strong>
+</div>
+<div class="col">
+
+  <select onchange="
+    document.getElementById('subject-4-gp').value=[document.getElementById('subject-4-cr').value*document.getElementById('subject-4-points').value]" 
+    id="subject-4-cr" class="form-select" aria-label="Default select example">
+      <option selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   
+    </select>
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  <strong>=</strong>
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="subject-4-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 05 SUBJECT 04  Ends -->
+
+
+
+
+
+
+
+<!-- ROW 06 SUBJECT 05 -->
+
+
+
+<div id="subject5-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          5.
+        </p>
+  </div>
+
+<div class="col">
+  <select onchange="
+    document.getElementById('subject-5-points').value=FindPoint(document.getElementById('subject-5-grade').value); 
+    document.getElementById('subject-5-gp').value=[document.getElementById('subject-5-cr').value*document.getElementById('subject-5-points').value]"
+    id="subject-5-grade"  class="form-select" aria-label="Default select example">
+    
+    <option selected>Select</option>
+      <option value="1">A+</option>
+      <option value="2">A</option>
+      <option value="3">B+</option>
+      <option value="4">B</option>
+      <option value="5">B-</option>
+      <option value="6">C+</option>
+      <option value="7">C</option>
+      <option value="8">D</option>
+      <option value="9">F</option>
+    </select>
+</div>
+
+
+<div class="col">
+
+
+    <input  id="subject-5-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    <strong>*</strong>
+</div>
+<div class="col">
+
+  <select onchange="
+    document.getElementById('subject-5-gp').value=[document.getElementById('subject-5-cr').value*document.getElementById('subject-5-points').value]" 
+    id="subject-5-cr" class="form-select" aria-label="Default select example">
+      <option selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   
+    </select>
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  <strong>=</strong>
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="subject-5-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 06 SUBJECT 05  Ends -->
+
+
+
+
+
+
+
+
+
+<!-- ROW 07 SUBJECT 06 -->
+
+
+
+<div id="subject6-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          6.
+        </p>
+  </div>
+
+<div class="col">
+  <select onchange="
+    document.getElementById('subject-6-points').value=FindPoint(document.getElementById('subject-6-grade').value); 
+    document.getElementById('subject-6-gp').value=[document.getElementById('subject-6-cr').value*document.getElementById('subject-6-points').value]"
+    id="subject-6-grade"  class="form-select" aria-label="Default select example">
+    
+    <option selected>Select</option>
+      <option value="1">A+</option>
+      <option value="2">A</option>
+      <option value="3">B+</option>
+      <option value="4">B</option>
+      <option value="5">B-</option>
+      <option value="6">C+</option>
+      <option value="7">C</option>
+      <option value="8">D</option>
+      <option value="9">F</option>
+    </select>
+</div>
+
+
+<div class="col">
+
+
+    <input  id="subject-6-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    <strong>*</strong>
+</div>
+<div class="col">
+
+  <select onchange="
+    document.getElementById('subject-6-gp').value=[document.getElementById('subject-6-cr').value*document.getElementById('subject-6-points').value]" 
+    id="subject-6-cr" class="form-select" aria-label="Default select example">
+      <option selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   
+    </select>
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  <strong>=</strong>
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="subject-6-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 07 SUBJECT 06  Ends -->
+
+
+
+
+
+
+
+
+<!-- ROW 08 SUBJECT 07 -->
+
+
+
+<div id="subject7-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          7.
+        </p>
+  </div>
+
+<div class="col">
+  <select onchange="
+    document.getElementById('subject-7-points').value=FindPoint(document.getElementById('subject-7-grade').value); 
+    document.getElementById('subject-7-gp').value=[document.getElementById('subject-7-cr').value*document.getElementById('subject-7-points').value]"
+    id="subject-7-grade"  class="form-select" aria-label="Default select example">
+    
+    <option selected>Select</option>
+      <option value="1">A+</option>
+      <option value="2">A</option>
+      <option value="3">B+</option>
+      <option value="4">B</option>
+      <option value="5">B-</option>
+      <option value="6">C+</option>
+      <option value="7">C</option>
+      <option value="8">D</option>
+      <option value="9">F</option>
+    </select>
+</div>
+
+
+<div class="col">
+
+
+    <input  id="subject-7-points" class="form-control" type="text" placeholder="Credit Hour" aria-label="default input example">
+
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    <strong>*</strong>
+</div>
+<div class="col">
+
+  <select onchange="
+    document.getElementById('subject-7-gp').value=[document.getElementById('subject-7-cr').value*document.getElementById('subject-7-points').value]" 
+    id="subject-7-cr" class="form-select" aria-label="Default select example">
+      <option selected>Select</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+   
+    </select>
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  <strong>=</strong>
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="subject-7-gp" class="form-control" type="text" placeholder="Grade Points" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 08 SUBJECT 07  Ends -->
+
+
+
+
+
+
+<!-- ROW 09 Button -->
+
+
+
+
+<div id="total-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+         
+        </p>
+  </div>
+
+<div class="col">
+  <p class="lead">
+         
+  </p>
+</div>
+
+
+<div class="col">
+
+
+  
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    
+</div>
+<div class="col">
+
+ 
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  
+</div>
+
+<div class="col">
+  
+  
+
+  <button style="width:100%;" onclick="FindTotalPoints()" class="btn btn-success">Calculates</button>
+
+
+</div>
+</div>
+
+<!-- ROW 09 Button  Ends -->
+
+
+
+
+
+
+
+<!-- ROW 10 Total -->
+
+
+
+
+<div id="total-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+        Sum:
+        </p>
+  </div>
+
+<div class="col">
+  <p class="lead">
+      
+  </p>
+</div>
+
+
+<div class="col">
+
+
+  
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    
+</div>
+<div class="col">
+
+  <input  id="total-points" class="form-control" type="text" placeholder="Total Points" aria-label="default input example">
+
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  
+</div>
+
+<div class="col">
+  
+  
+
+    <input  id="total-gp" class="form-control" type="text" placeholder="Total GP" aria-label="default input example">
+
+
+
+</div>
+</div>
+
+<!-- ROW 10 Total  Ends -->
+
+
+
+
+
+
+<!-- ROW 11 GPA -->
+
+
+
+
+<div id="total-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          GPA:
+        </p>
+  </div>
+
+<div class="col">
+  <p class="lead">
+         
+  </p>
+</div>
+
+
+<div class="col">
+
+
+  
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    
+</div>
+<div class="col">
+ 
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  
+</div>
+
+<div class="col">
+  
+  
+
+  <input  id="total-gpa" class="form-control" type="text" placeholder="Total GPA" aria-label="default input example">
+
+
+
+
+</div>
+</div>
+
+<!-- ROW 11 GPA  Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ROW 12 GPA -->
+
+
+
+
+<div id="total-row" class="row">
+
+  <div class="col">
+      <p class="lead">
+          CGPA:
+        </p>
+  </div>
+
+<div class="col">
+  <p class="lead">
+         
+  </p>
+</div>
+
+
+<div class="col">
+
+
+  
+
+
+</div>
+
+<div style="text-align: center;" class="col">
+    
+</div>
+<div class="col">
+ 
+
+</div>
+
+
+<div style="text-align: center;" class="col">
+  
+</div>
+
+<div class="col">
+  
+  
+
+  <input  id="total-cgpa" class="form-control" type="text" placeholder="Total CGPA" aria-label="default input example">
+
+
+
+
+</div>
+</div>
+
+<!-- ROW 12 GPA  Ends -->
+
+</div>
+</div>
+</div>
+ 
+
+</div>
+
+<!-- Footer -->
+
+<div class="mt-4 pt-5 pb-5 footer">
+  <div id="footer-container" class="container">
+    <div class="row">
+      <div style="padding-right:150px ;" class="col-lg-5 col-xs-12 about-company">
+        <h2>Math Lab</h2>
+        <p style="color: rgb(223, 223, 223);" class="pr-5 text-white-50">There is wide Range of Calculators & Converters Just for the sake of your help in doing complex Calculations </p>
+        <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+      </div>
+      <div class="col-lg-3 col-xs-12 links">
+        <h4 class="mt-lg-0 mt-sm-3">Pages</h4>
+          <ul class="m-0 p-0">
+            <li>- <a href="#">Calculators</a></li>
+            <li>- <a href="#">Converters</a></li>
+            <li>- <a href="#">About Us</a></li>
+            <li>- <a href="#">Contact</a></li>
+            
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12 location">
+        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+        <p>Gujranwala, Pakistan</p>
+        <p class="mb-0"><i class="fa fa-phone mr-3"></i>+92 315 000 00 00</p>
+        <p><i class="fa fa-envelope-o mr-3"></i>19011598-083@uog.edu.pk</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col copyright">
+        <p class=""><small class="text-white-50">© 2022. All Rights Reserved.</small></p>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+ 
+
+    
+ 
+      
+    <script
+    src="https://kit.fontawesome.com/c796b1539e.js"
+    crossorigin="anonymous"
+  ></script>
+
+      <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
+</html>
